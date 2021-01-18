@@ -4,6 +4,28 @@
              xmlns:local="clr-namespace:Dop5"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="RoundButtonTemplate" TargetType="Button">
+            <Setter Property="Background" Value="#010104"/>
+            <Setter Property="Foreground" Value="#240935"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+
+                        <Border CornerRadius="5" Background="{TemplateBinding Background}" BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                            </ContentPresenter>
+                        </Border>
+
+
+                    </ControlTemplate>
+                </Setter.Value>
+
+
+            </Setter>
+
+
+
+
+        </Style>
     </Application.Resources>
 </Application>
