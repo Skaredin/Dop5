@@ -19,5 +19,6 @@
             </Menu>
             <TextBox x:Name="txtBox"></TextBox>
         </DockPanel>
+        <Button Content="Samostoatelnaa Rabota" Height="36" Margin="405,0,0,0" Click="Button_Click"/>
     </StackPanel>
 </Window>

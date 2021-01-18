@@ -23,6 +23,6 @@
             <Image Source="image/3.jpg" MaxHeight="100" MaxWidth="100" Height="100" Width="100"/>
             <Image Source="image/4.jpg" MaxHeight="100" MaxWidth="100" Height="100" Width="100"/>
         </StackPanel>
-        <Button Content="Zadanie6" HorizontalAlignment="Left" Margin="491,399,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Zadanie6" HorizontalAlignment="Left" Margin="486,362,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
     </Grid>
 </Window>

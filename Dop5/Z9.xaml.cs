@@ -29,5 +29,12 @@ namespace Dop5
         }
         private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
         { MessageBox.Show("LOL"); }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Samostoatelnaa1 samostoatelnaa1 = new Samostoatelnaa1();
+            samostoatelnaa1.Show();
+        }
     }
 }
