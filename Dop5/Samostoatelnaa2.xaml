@@ -78,8 +78,11 @@
                 <StackPanel>
                     <Label>Введите свое имя:</Label>
                     <TextBox></TextBox>
+
+                    <Button Height="12" Margin="1" FontSize="10" FontFamily="non-existent" Click="Button_Click">Samostoatelnaa3</Button>
+                        
                 </StackPanel>
-                
+               
             </StackPanel>
             
         </Button>

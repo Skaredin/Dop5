@@ -27,7 +27,7 @@ namespace Dop5
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Samostoatelnaa1 samostoatelnaa2 = new Samostoatelnaa1();
+            Samostoatelnaa2 samostoatelnaa2 = new Samostoatelnaa2();
             samostoatelnaa2.Show();
         }
     }

@@ -23,5 +23,12 @@ namespace Dop5
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Z7Sam z7Sam = new Z7Sam();
+            z7Sam.Show();
+        }
     }
 }
