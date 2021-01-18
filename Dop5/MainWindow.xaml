@@ -7,6 +7,27 @@
         xmlns:colection ="clr-namespace:System.Collections;assembly=mscorlib"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Storyboard x:Key="update" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="update_arrow_path">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Top)" Storyboard.TargetName="update_arrow_path">
+                <EasingDoubleKeyFrame KeyTime="0" Value="10"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-10"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-10"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource update}"/>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid>
         <ListView Name="anlist" ItemsSource="{DynamicResource ResourceKey=anim}">
             <ListView.View>
@@ -26,6 +47,14 @@
                 </colection:ArrayList>
             </ListView.Resources>
         </ListView>
-        <Button Content="Zadanie2" Height="100" Width="75" Click="Button_Click"/>
+        <Grid>
+            <Canvas HorizontalAlignment="Center" Width="20" Height="26" VerticalAlignment="Top" ToolTip="Ready to update" Margin="0,260,10,0" Background="{Binding Background, ElementName=update_window}">
+                <Path x:Name="update_arrow_path" Canvas.Top="10" Opacity="0" Width="14" Height="20" Stretch="Fill" Fill="#000" Data="F1 M 34,57L 42,57L 42,32.25L 52,42.25L 52,31.75L 38,17.75L 24,31.75L 24,42.25L 34,32.25L 34,57 Z "/>
+            </Canvas>
+            <Button Content="Zadanie2" Height="100" Width="75" Click="Button_Click">
+                
+            </Button>
+           
+        </Grid>
     </Grid>
 </Window>
