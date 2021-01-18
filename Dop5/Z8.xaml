@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Dop5"
         mc:Ignorable="d"
         Title="Z8" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBox  Height="30" PreviewTextInput="TextBlock_PreviewTextInput" PreviewKeyDown="TextBlock_PreviewKeyDown"></TextBox>
+    </StackPanel>
 </Window>

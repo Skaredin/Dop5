@@ -23,5 +23,22 @@ namespace Dop5
         {
             InitializeComponent();
         }
+
+        private void TextBlock_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int val;
+            if (!Int32.TryParse(e.Text, out val)&& e.Text!="-")
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TextBlock_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key==Key.Space)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
