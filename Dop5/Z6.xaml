@@ -1,0 +1,27 @@
+﻿<Window x:Class="Dop5.Z6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dop5"
+        mc:Ignorable="d"
+        Title="Konteiner komp. InkCanvas" Height="350" Width="500" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="22"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="5" Orientation="Horizontal">
+            <TextBlock Margin="5" Text="Viberite Regim"/>
+            <ComboBox Name="list" VerticalAlignment="Center" Margin="0 0 10 0"/>
+            <Button Content="Zadanie7 Kak samostoatelnaa" Width="206" Click="Button_Click"/>
+
+        </StackPanel>
+        <InkCanvas Name="inc" Grid.Row="1" Background="BlueViolet" EditingMode="{Binding ElementName=list, Path=SelectedItem}" Gesture="inc_Gesture">
+            <Button InkCanvas.Left="10" InkCanvas.Top="10" Content="Knopka"></Button>
+            <TextBlock InkCanvas.Left="100" InkCanvas.Top="30" Text="Nadpis"></TextBlock>
+        </InkCanvas>
+        <TextBlock x:Name="gesrName" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Grid.Row="2"></TextBlock> 
+    </Grid>
+</Window>

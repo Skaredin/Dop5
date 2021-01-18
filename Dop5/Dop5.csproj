@@ -64,6 +64,15 @@
     <Compile Include="Z5.xaml.cs">
       <DependentUpon>Z5.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Z6.xaml.cs">
+      <DependentUpon>Z6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Z7Sam.xaml.cs">
+      <DependentUpon>Z7Sam.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Z8.xaml.cs">
+      <DependentUpon>Z8.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -85,6 +94,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Z5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Z6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Z7Sam.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Z8.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

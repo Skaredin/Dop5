@@ -15,24 +15,13 @@ using System.Windows.Shapes;
 namespace Dop5
 {
     /// <summary>
-    /// Логика взаимодействия для Z5.xaml
+    /// Логика взаимодействия для Z8.xaml
     /// </summary>
-    /// 
-    
-    public partial class Z5 : Window
+    public partial class Z8 : Window
     {
-      
-
-        public Z5()
+        public Z8()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-            Z6 z6 = new Z6();
-            z6.Show();
         }
     }
 }
