@@ -8,5 +8,6 @@
         Title="Z8" Height="450" Width="800">
     <StackPanel>
         <TextBox  Height="30" PreviewTextInput="TextBlock_PreviewTextInput" PreviewKeyDown="TextBlock_PreviewKeyDown"></TextBox>
+        <Button Content="Zadanie9" Click="Button_Click"/>
     </StackPanel>
 </Window>

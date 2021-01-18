@@ -40,5 +40,12 @@ namespace Dop5
                 e.Handled = true;
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Z9 z9 = new Z9();
+            z9.Show();
+        }
     }
 }

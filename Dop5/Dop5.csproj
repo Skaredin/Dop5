@@ -73,6 +73,9 @@
     <Compile Include="Z8.xaml.cs">
       <DependentUpon>Z8.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Z9.xaml.cs">
+      <DependentUpon>Z9.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -106,6 +109,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Z8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Z9.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
